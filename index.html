@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>陪伴是最长情的告白</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/pagingPlugins.css">
+	</head>
+	<body>
+		<div id = "showPage">
+			
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/pagingPlugins.min.js"></script>
+		<script>
+			var page = $("#showPage").paging({
+				"total":30,
+				"color":"aqua",
+				"showCount":20,
+				"doSomethingFun":doSomething
+			});
+			page.refresh(121,12);
+			function doSomething(currentPage,showCount){
+				alert("当前页:"+currentPage+"      显示条数:"+showCount);
+			}
+		</script>
+	</body>
+</html>

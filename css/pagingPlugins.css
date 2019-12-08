@@ -1,0 +1,98 @@
+*{
+	-webkit-tap-highlight-color:transparent;
+ }
+.pagingPluginsDiv{
+	text-align: center;
+	cursor:pointer;
+	margin: 5px;
+	font-family: "微软雅黑";
+	height: 40px;
+}
+.pagingDiv{
+	margin-right: 0px !important;
+}
+.jumpDiv{
+	margin-left: 0px !important;
+}
+.pagingPluginsDiv div{
+	display: inline-block;
+	line-height: 30px;
+	margin:2.5px 5px;
+}
+.pagingDiv div{
+	width: 40px;
+	border-radius: 5px;
+}
+.jumpDiv input{
+	text-align: center;
+	outline-style: none ;
+	width: 40px;
+	border: 1px solid #ccc;
+	padding: 5px 0px;
+	font-size: 15px;
+	background-color: #FFFFFF;
+}
+.jumpDiv div{
+	width: 100px;
+	border-radius: 5px;
+	cursor:default;
+}
+.jumpDiv div:last-child{
+	width: 50px;
+	cursor:pointer;
+}
+
+.jumpDiv input{
+	border-radius: 5px;
+}
+.pagingPluginsDiv .autoShow{
+	width: 40px;
+	border-radius: 5px;
+	display: none;
+}
+.autoShow:hover{
+	background-color: aqua;
+} 
+.pagingDiv div:hover{
+	background-color: aqua;
+} 
+.jumpDiv div:last-child:hover{
+	background-color: aqua;
+} 
+.jumpDiv div:hover{
+	background-color: white;
+}
+@media screen and (max-width: 950px) {
+	.pagingPluginsDiv .jumpDiv{
+		display: none;
+	}
+	.pagingPluginsDiv .autoShow{
+		display: inline-block;
+	}
+}
+@media screen and (max-width: 600px) {
+	.pagingPluginsDiv{
+		margin: 0px;
+		height: 30px;
+	}
+	.pagingDiv{
+		margin:0px !important;
+	}
+	.pagingPluginsDiv .jumpDiv{
+		margin:0px !important;
+	}
+	.pagingPluginsDiv div{
+		margin:0px;
+	}
+}
+@media screen and (max-width: 475px) {
+	.pagingDiv div:nth-child(6){
+		display: none;
+	}
+	.pagingDiv div:nth-child(7){
+		display: none;
+	}
+	.jumpDiv div:nth-child(2){
+		display: none;
+	}
+}
